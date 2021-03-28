@@ -1,8 +1,8 @@
 [
   {
     "Committer": "AbhishekSoni",
-    "BuildNumber": "BUILD_NUMBER",
-    "KUBERNETES": "latest",
+    "LatestUpdatedVersion": "BUILD_NUMBER",
+    "Kubernetes": "latest",
     "Jenkins": "latest"
   }
 ]
