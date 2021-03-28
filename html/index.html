@@ -53,17 +53,17 @@
         <table id='table'>
             <!-- HEADING FORMATION -->
             <tr>
-                <th>GFG UserHandle</th>
-                <th>Practice Problems</th>
-                <th>Coding Score</th>
-                <th>GFG Articles</th>
+                <th>Committer</th>
+                <th>LatestUpdatedVersion</th>
+                <th>Kubernetes</th>
+                <th>Jenkins</th>
             </tr>
   
             <script>
                 $(document).ready(function () {
   
                     // FETCHING DATA FROM JSON FILE
-                    $.getJSON("gfgdetails.json", 
+                    $.getJSON("data.json", 
                             function (data) {
                         var student = '';
   
@@ -74,16 +74,16 @@
                             // DATA FROM JSON OBJECT
                             student += '<tr>';
                             student += '<td>' + 
-                                value.GFGUserName + '</td>';
+                                value.Committer + '</td>';
   
                             student += '<td>' + 
-                                value.NoOfProblems + '</td>';
+                                value.LatestUpdatedVersion + '</td>';
   
                             student += '<td>' + 
-                                value.TotalScore + '</td>';
+                                value.Kubernetes + '</td>';
   
                             student += '<td>' + 
-                                value.Articles + '</td>';
+                                value.Jenkins + '</td>';
   
                             student += '</tr>';
                         });
