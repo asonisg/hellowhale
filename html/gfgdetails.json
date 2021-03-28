@@ -1,8 +1,8 @@
 [
   {
-    "GFGUserName": "User-1",
-    "NoOfProbleans": "150",
-    "TotalScore": "100",
-    "Articles": "30"
+    "Committer": "AbhishekSoni",
+    "BuildNumber": "BUILD_NUMBER",
+    "KUBERNETES": "latest",
+    "Jenkins": "latest"
   }
 ]
