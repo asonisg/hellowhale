@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
       - name: hello-whale-container
-        image: asonisg/hellowhale:51
+        image: asonisg/hellowhale:latest
         imagePullPolicy: Always
         ports:
         - containerPort: 80
