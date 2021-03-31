@@ -3,13 +3,7 @@ pipeline {
   agent any
 
   stages {
-
-    stage('Checkout Source') {
-      steps {
-        git url:'https://github.com/asonisg/hellowhale.git', branch:'master'
-      }
-    }
-      
+  
       stage("data.json") {
           steps {
               sh '''#!/bin/bash
