@@ -32,7 +32,7 @@ pipeline {
     
     stage('Trigger Deloy Job') {
       steps {
-          build job: 'app-deploy', parameters: [string(name: 'BUILD_NUMBER', value: env.BUILD_NUMBER)]
+          build job: 'app-deploy', parameters: [string(name: 'APP_VERSION', value: env.BUILD_NUMBER)]
       }
     }
 
