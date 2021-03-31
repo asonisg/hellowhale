@@ -32,7 +32,7 @@ pipeline {
     
     stage('Trigger Deloy Job') {
       steps {
-          build job: 'test'
+          build job: 'app-deploy'
       }
     }
 
