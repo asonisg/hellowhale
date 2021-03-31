@@ -4,14 +4,6 @@ pipeline {
 
   stages {
   
-      stage("data.json") {
-          steps {
-              sh '''#!/bin/bash
-                  echo "[ {"Committer": “AbhishekSoni”, "LatestUpdatedVersion": "150", "Kubernetes": “latest , "Jenkins": “latest”]" > test.json
-                  cp -r test.json html/data.json || true
-                  '''
-          }
-      }
       stage("Build image") {
             steps {
                 script {
