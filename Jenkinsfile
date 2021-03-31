@@ -31,7 +31,9 @@ pipeline {
 
     
     stage('Trigger Deloy Job') {
-      build job: 'test'
+      steps {
+          build job: 'test'
+      }
     }
 
   }
