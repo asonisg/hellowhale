@@ -30,10 +30,8 @@ pipeline {
         }
 
     
-    stage('Deploy App') {
-      steps {
-        script {
-          kubernetesDeploy(configs: "hellowhale.yml", kubeconfigId: "kubeconfig")
+    stage('Trigger Deloy Job') {
+      build job: 'test'
         }
       }
     }
